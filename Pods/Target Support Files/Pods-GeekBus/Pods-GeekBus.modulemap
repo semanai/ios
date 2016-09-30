@@ -1,0 +1,6 @@
+framework module Pods_GeekBus {
+  umbrella header "Pods-GeekBus-umbrella.h"
+
+  export *
+  module * { export * }
+}

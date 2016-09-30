@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationTableViewCell" rowHeight="298" id="KGk-i7-Jjw" customClass="StationTableViewCell" customModule="GeekBus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="564" height="298"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="564" height="297"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UuK-IJ-TLl" userLabel="Station View">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asB-z6-jAZ">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min walk · R - 45, R - 2000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3G-J2-mjq">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="busStop" translatesAutoresizingMaskIntoConstraints="NO" id="fLn-JE-pN8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4oD-YY-dVS"/>
+                                    <constraint firstAttribute="width" constant="35" id="gkR-TF-tQo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fLn-JE-pN8" firstAttribute="leading" secondItem="UuK-IJ-TLl" secondAttribute="leading" constant="8" id="11Q-Jd-ajs"/>
+                            <constraint firstItem="L3G-J2-mjq" firstAttribute="leading" secondItem="fLn-JE-pN8" secondAttribute="trailing" constant="8" id="4cS-qk-tHo"/>
+                            <constraint firstItem="L3G-J2-mjq" firstAttribute="top" secondItem="asB-z6-jAZ" secondAttribute="bottom" constant="4" id="CSq-vk-K6c"/>
+                            <constraint firstItem="fLn-JE-pN8" firstAttribute="centerY" secondItem="UuK-IJ-TLl" secondAttribute="centerY" id="Rls-TY-fap"/>
+                            <constraint firstAttribute="trailing" secondItem="asB-z6-jAZ" secondAttribute="trailing" constant="8" id="b5J-tw-85J"/>
+                            <constraint firstAttribute="bottom" secondItem="L3G-J2-mjq" secondAttribute="bottom" constant="8" id="gs0-Hq-Ez8"/>
+                            <constraint firstItem="asB-z6-jAZ" firstAttribute="top" secondItem="UuK-IJ-TLl" secondAttribute="top" constant="8" id="tuu-Eh-TEO"/>
+                            <constraint firstItem="asB-z6-jAZ" firstAttribute="leading" secondItem="fLn-JE-pN8" secondAttribute="trailing" constant="8" id="vns-t8-TNU"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-TW-J8M" userLabel="Separator View">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hei-TR-nPu"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8m3-uy-Y0x"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ff6-Wp-gOk">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="T0M-1j-AHY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="ff6-Wp-gOk" secondAttribute="bottom" constant="-10" id="2O6-7j-n0h"/>
+                    <constraint firstItem="UuK-IJ-TLl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AGL-U7-bVY"/>
+                    <constraint firstAttribute="trailing" secondItem="ff6-Wp-gOk" secondAttribute="trailing" id="Bep-hj-dGZ"/>
+                    <constraint firstAttribute="trailing" secondItem="UuK-IJ-TLl" secondAttribute="trailing" id="D55-kt-5Qy"/>
+                    <constraint firstItem="8m3-uy-Y0x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Dop-Wb-6Wv"/>
+                    <constraint firstItem="ff6-Wp-gOk" firstAttribute="top" secondItem="8m3-uy-Y0x" secondAttribute="bottom" constant="8" id="E70-48-2r5"/>
+                    <constraint firstItem="8m3-uy-Y0x" firstAttribute="top" secondItem="EIc-TW-J8M" secondAttribute="bottom" constant="4" id="Tr0-tX-d2y"/>
+                    <constraint firstAttribute="trailing" secondItem="EIc-TW-J8M" secondAttribute="trailing" constant="8" id="U2S-9H-E20"/>
+                    <constraint firstItem="EIc-TW-J8M" firstAttribute="top" secondItem="UuK-IJ-TLl" secondAttribute="bottom" id="gdB-Uy-2AS"/>
+                    <constraint firstAttribute="trailing" secondItem="8m3-uy-Y0x" secondAttribute="trailing" id="l1x-6e-cdM"/>
+                    <constraint firstItem="UuK-IJ-TLl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="o1f-0A-rBq"/>
+                    <constraint firstItem="ff6-Wp-gOk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="p7D-ld-Bs3"/>
+                    <constraint firstItem="EIc-TW-J8M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qow-XD-KyN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="infoLabel" destination="L3G-J2-mjq" id="Ime-Ew-kXa"/>
+                <outlet property="stackView" destination="8m3-uy-Y0x" id="PQT-pg-czd"/>
+                <outlet property="stationNameLabel" destination="asB-z6-jAZ" id="9VV-TD-eXV"/>
+                <outlet property="stationView" destination="UuK-IJ-TLl" id="ARu-qX-GP3"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="-51"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="busStop" width="133" height="114"/>
+    </resources>
+</document>

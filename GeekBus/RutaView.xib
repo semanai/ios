@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RutaView" customModule="GeekBus" customModuleProvider="target">
+            <connections>
+                <outlet property="busLogo" destination="Igs-0R-rE7" id="qFI-CM-mmZ"/>
+                <outlet property="busView" destination="rOa-Au-YAN" id="xvO-8K-cQe"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ewB-dG-cHp"/>
+                <outlet property="lineView" destination="JYw-d9-9dU" id="Pkn-uj-QEn"/>
+                <outlet property="rutaLabel" destination="PWn-Xz-x4m" id="Vdz-wN-anB"/>
+                <outlet property="rutaNameLabel" destination="YNb-gx-8yC" id="esn-br-Jsc"/>
+                <outlet property="timeLabel" destination="plE-am-XMp" id="YRw-7W-Qpx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="rOa-Au-YAN" userLabel="Bus View">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="Igs-0R-rE7">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="IOu-vp-Mdg"/>
+                                <constraint firstAttribute="width" constant="15" id="R5T-GB-goM"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R-45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWn-Xz-x4m">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYw-d9-9dU" userLabel="Line View">
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="YIa-aU-cpO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="JYw-d9-9dU" secondAttribute="bottom" id="Ar9-kI-WlZ"/>
+                        <constraint firstItem="Igs-0R-rE7" firstAttribute="centerY" secondItem="rOa-Au-YAN" secondAttribute="centerY" id="PFk-5s-sAS"/>
+                        <constraint firstItem="JYw-d9-9dU" firstAttribute="leading" secondItem="rOa-Au-YAN" secondAttribute="leading" id="TQA-ad-WVT"/>
+                        <constraint firstAttribute="trailing" secondItem="JYw-d9-9dU" secondAttribute="trailing" id="UK9-Hk-f8D"/>
+                        <constraint firstAttribute="trailing" secondItem="PWn-Xz-x4m" secondAttribute="trailing" constant="2" id="WaX-O5-xRk"/>
+                        <constraint firstItem="Igs-0R-rE7" firstAttribute="leading" secondItem="rOa-Au-YAN" secondAttribute="leading" constant="2" id="fdH-QX-eDg"/>
+                        <constraint firstItem="Igs-0R-rE7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rOa-Au-YAN" secondAttribute="top" constant="2" id="gGu-bQ-YuK"/>
+                        <constraint firstItem="JYw-d9-9dU" firstAttribute="top" secondItem="PWn-Xz-x4m" secondAttribute="bottom" id="iJk-EY-gzA"/>
+                        <constraint firstItem="PWn-Xz-x4m" firstAttribute="top" secondItem="rOa-Au-YAN" secondAttribute="top" constant="2" id="okQ-8p-A1e"/>
+                        <constraint firstItem="PWn-Xz-x4m" firstAttribute="leading" secondItem="Igs-0R-rE7" secondAttribute="trailing" constant="2" id="tvW-kW-YsG"/>
+                        <constraint firstItem="JYw-d9-9dU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Igs-0R-rE7" secondAttribute="bottom" constant="2" id="uBK-sV-5UG"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Bus" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="YNb-gx-8yC">
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="plE-am-XMp">
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YNb-gx-8yC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="AJ9-OK-tSZ"/>
+                <constraint firstItem="plE-am-XMp" firstAttribute="leading" secondItem="YNb-gx-8yC" secondAttribute="trailing" constant="8" id="S3Z-xo-xcV"/>
+                <constraint firstItem="rOa-Au-YAN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" id="T39-Sa-gL8"/>
+                <constraint firstItem="YNb-gx-8yC" firstAttribute="leading" secondItem="rOa-Au-YAN" secondAttribute="trailing" constant="8" id="aaI-Ll-8W0"/>
+                <constraint firstAttribute="bottom" secondItem="YNb-gx-8yC" secondAttribute="bottom" constant="8" id="b5y-RP-QhT"/>
+                <constraint firstAttribute="trailing" secondItem="plE-am-XMp" secondAttribute="trailing" constant="8" id="bAd-pw-o7m"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rOa-Au-YAN" secondAttribute="bottom" id="lDf-fz-zAt"/>
+                <constraint firstItem="plE-am-XMp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qaf-zS-gQp"/>
+                <constraint firstItem="rOa-Au-YAN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="r3F-yp-sDP"/>
+                <constraint firstItem="rOa-Au-YAN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tn7-9E-E8y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-112.5" y="-217"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bus" width="100" height="100"/>
+    </resources>
+</document>
